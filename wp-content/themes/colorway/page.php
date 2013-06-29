@@ -16,9 +16,6 @@ get_header(); ?>
 <div class="grid_24 content">
   <div class="grid_16 alpha">
     <div class="content-wrap">
-      <div class="content-info">
-        <?php if (function_exists('inkthemes_breadcrumbs')) inkthemes_breadcrumbs(); ?>
-      </div>
       <div class="sl">
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <?php if ( is_front_page() ) { ?>
@@ -35,13 +32,6 @@ get_header(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . 'Pages:' . '</span>', 'after' => '</div>' ) ); ?>
         <?php edit_post_link('Edit','', '' ); ?>
         <div class="clear"></div>
-        <!--Start Comment Section-->
-        <div class="comment_section">
-          <!--Start Comment list-->
-          <?php comments_template( '', true ); ?>
-          <!--End Comment Form-->
-        </div>
-        <!--End comment Section-->
         <?php endwhile; ?>
       </div>
       <div class="folio-page-info">

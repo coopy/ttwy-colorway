@@ -46,6 +46,15 @@
                         Cufon.set('engine', 'canvas');
                 </script>
         <![endif]-->
+
+	<style type="text/css">
+		a.slide-content:link,
+		a.slide-content:visited,
+		a.slide-content:hover,
+		a.slide-content:active {
+			color: black;
+		}
+	</style>
     </head>
     <body <?php body_class(); ?> background="<?php
         if (inkthemes_get_option('inkthemes_bodybg') != '') {
@@ -55,7 +64,7 @@
               <?php echo get_template_directory_uri(); ?>/images/body-bg.png
             <?php } ?>">
         <!--Start Container Div-->
-        <div class="container_24 container">
+        <div id="main_container" class="container_24 container">
             <!--Start Header Grid-->
             <div class="grid_24 header">
                 <div class="logo"> <a href="<?php echo home_url(); ?>"><img src="<?php if (inkthemes_get_option('colorway_logo') != '') { ?><?php echo inkthemes_get_option('colorway_logo'); ?><?php } else { ?><?php echo get_template_directory_uri(); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?>" /></a> </div>

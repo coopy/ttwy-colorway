@@ -49,7 +49,6 @@
                         <a href="<?php echo inkthemes_get_option('colorway_digg'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/digg.png" alt="digg" title="digg"/></a>
                     <?php } else { ?>
                     <?php } ?>
-                    <p><a href="<?php echo esc_url('http://www.inkthemes.com'); ?>"><?php _e('Colorway Wordpress Theme</a> by InkThemes.com','colorway'); ?></p>
                 </div> 
         </div>
     </div>

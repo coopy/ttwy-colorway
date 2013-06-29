@@ -27,7 +27,7 @@
                                 <h2 class="title"><a href="#"><?php _e('Beauty at its best','colorway'); ?></a></h2>
                             <?php } ?> 
                             <?php if (inkthemes_get_option('colorway_slidedescription1') != '') { ?>
-                                <p><?php echo inkthemes_get_option('colorway_slidedescription1'); ?></p>
+                                <p><a class="slide-content" href="<?php echo inkthemes_get_option('colorway_slidelink1'); ?>"><?php echo inkthemes_get_option('colorway_slidedescription1'); ?></a></p>
                             <?php } else { ?>
                                 <p><?php _e('What happens when beauty and simplicity connects. We tried to give you a slight hint of that with the Colorway Theme.','colroway'); ?></p>
                             <?php } ?>

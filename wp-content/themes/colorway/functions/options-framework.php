@@ -178,17 +178,18 @@ if (!function_exists('inkthemes_optionsframework_page')) {
         settings_errors();
         ?>
         <div class="trail-notify">
-            <h1><?php _e('Upgrade to Colorway PRO!','colorway'); ?></h1>
-            <p><?php _e('You are Using the Lite Version of Colorway Theme. Upgrade to Pro for extra features, Home Page Slider, Gallery Template, Contact Page Template, Multiple Colors and much more.','colorway'); ?></p>
-            <a href="<?php echo esc_url('http://www.inkthemes.com/wp-themes/colorway-wp-theme/'); ?>" target="blank"><?php _e('Buy Colorway PRO Now →','colorway'); ?></a>
+            <h1><?php _e('Upgrade to Colorway PRO!', 'colorway'); ?></h1>
+            <p><?php _e('You are Using the Lite Version of Colorway Theme. Upgrade to Pro for extra features, Home Page Slider, Gallery Template, Contact Page Template, Multiple Colors and much more.', 'colorway'); ?></p>
+            <a href="<?php echo esc_url('http://www.inkthemes.com/wp-themes/colorway-wp-theme/'); ?>" target="blank"><?php _e('Buy Colorway PRO Now →', 'colorway'); ?></a>
 
         </div>
         <div class="wrap">    
-                            <?php $options = get_option('of_template');
-                            $themename = get_option('of_themename'); ?>
+            <?php $options = get_option('of_template');
+            $themename = get_option('of_themename');
+            ?>
             <div id="header">
                 <div class="logo">
-                    <h2><?php echo $themename; ?><?php _e('Options','colorway'); ?></h2>
+                    <h2><?php echo $themename; ?>&nbsp;<?php _e('Options', 'colorway'); ?></h2>
                 </div>
                 <a href="http://www.inkthemes.com" target="_new">
                     <div class="icon-option"> </div>
@@ -198,11 +199,11 @@ if (!function_exists('inkthemes_optionsframework_page')) {
                 <div id="optionsframework">
                     <form action="options.php" method="post">
                         <ul class="nav-tab-wrapper">
-						<?php echo $return[1]; ?>
+        <?php echo $return[1]; ?>
                         </ul>
                         <div class="content">
-						<?php settings_fields('optionsframework'); ?>
-						<?php echo $return[0]; /* Settings */ ?>
+                            <?php settings_fields('optionsframework'); ?>
+        <?php echo $return[0]; /* Settings */ ?>
                         </div>
                         <div id="optionsframework-submit">
                             <input type="submit" class="button-primary" name="update" value="<?php esc_attr_e('Save Options'); ?>" />
@@ -268,7 +269,7 @@ function inkthemes_optionsframework_validate($input) {
                 $clean[$id] = apply_filters('of_sanitize_' . $option['type'], $input[$id], $option);
             }
         }
-        add_settings_error('options-framework', 'save_options','Options saved.', 'updated fade');
+        add_settings_error('options-framework', 'save_options', 'Options saved.', 'updated fade');
         return $clean;
     }
     /*

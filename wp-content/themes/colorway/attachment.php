@@ -2,7 +2,6 @@
 /**
  * The template for displaying attachments.
  *
- * @package WordPress
  */
 get_header();
 ?>
@@ -12,11 +11,13 @@ get_header();
         <div class="fullwidth">
             <div class="content-info">
                 <?php if (function_exists('inkthemes_breadcrumbs'))
-                    inkthemes_breadcrumbs(); ?>
+                    inkthemes_breadcrumbs();
+                ?>
             </div>
             <div>
                 <?php if (have_posts())
-                    while (have_posts()) : the_post(); ?>
+                    while (have_posts()) : the_post();
+                        ?>
                         <p><a href="<?php echo get_permalink($post->post_parent); ?>" title="<?php esc_attr(printf(__('Return to %s', 'colorway'), get_the_title($post->post_parent))); ?>" rel="gallery">
                                 <?php
                                 /* translators: %s - title of parent post */
@@ -24,7 +25,7 @@ get_header();
                                 ?>
                             </a></p>
                         <h2>
-                            <?php the_title(); ?>
+                        <?php the_title(); ?>
                         </h2>
                         <?php
                         printf(__('By %2$s', 'colorway'), 'meta-prep meta-prep-author', sprintf('<a class="url fn n" href="%1$s" title="%2$s">%3$s</a>', get_author_posts_url(get_the_author_meta('ID')), sprintf(esc_attr__('View all posts by %s', 'colorway'), get_the_author()), get_the_author()
@@ -44,7 +45,7 @@ get_header();
                             );
                         }
                         ?>
-                        <?php edit_post_link(__('Edit', 'colorway'), '', ''); ?>
+                    <?php edit_post_link(__('Edit', 'colorway'), '', ''); ?>
                     </div>
                     <!-- .entry-meta -->
                     <?php
@@ -80,13 +81,13 @@ get_header();
                         <a href="<?php echo wp_get_attachment_url(); ?>" title="<?php echo esc_attr(get_the_title()); ?>" rel="attachment"><?php echo basename(get_permalink()); ?></a>
                     <?php endif; ?>
                     <?php if (!empty($post->post_excerpt))
-                        the_excerpt(); ?>
+                        the_excerpt();
+                    ?>
                     <?php the_content(__('Continue reading &rarr;', 'colorway')); ?>
-                    <?php wp_link_pages(array('before' => '' . __('Pages:', 'colorway'), 'after' => '')); ?>
-                    <?php twentyten_posted_in(); ?>
-                    <?php edit_post_link(__('Edit', 'colorway'), ' ', ''); ?>
-                    <?php comments_template(); ?>
-                <?php endwhile; ?>
+                    <?php wp_link_pages(array('before' => '' . __('Pages:', 'colorway'), 'after' => '')); ?>       
+        <?php edit_post_link(__('Edit', 'colorway'), ' ', ''); ?>
+        <?php comments_template(); ?>
+    <?php endwhile; ?>
         </div>
     </div>
 </div>

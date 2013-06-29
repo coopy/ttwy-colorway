@@ -4,7 +4,7 @@ Theme URI: http://www.inkthemes.com/wp-themes/colorway-wp-theme/
 Description: Colorway is Simple, Elegant, Responsive and beautiful Theme with Easy Customization Options built by InkThemes.com. The Customization Options includes using your own Logos, Backgrounds, Analytics and your own Custom Footer Texts and Analytics that can be tweaked using Theme Options Panel. Colorway Theme is Single Click Intall feature, Just press activate button and your website will get ready with all the dummy content. Just set the content from the Themes Options Panel. Colorway by InkThemes.com is suitable for any business or personal website. The Theme can work for various different niches. It includes special styles for Gallery pages, and has an optional fullwidth page template as well.
 Author: InkThemes.com
 Author URI: http://www.inkthemes.com
-Version: 2.2
+Version: 2.5.2
 License: GNU General Public License
 License URI: license.txt
 Tags: black, blue, green, white, gray, custom-menu, dark, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, custom-colors, custom-header, custom-menu, light, theme-options, editor-style
@@ -362,13 +362,13 @@ ol li {
     margin-left:-32px;
     padding:0px;
 }
-#content .one_fourth h3 {
+#content .one_fourth h2 {
     margin:0px;
     padding:0px;
     margin-top:15px;
     margin-bottom:10px;
 }
-#content .one_fourth h3 a {
+#content .one_fourth h2 a {
     color:#4a4a4a;
 }
 #content ul.thumbnails li {
@@ -417,7 +417,7 @@ ol li {
     margin-top:10px;
 }
 .footer-navi .navigation ul.footer_des {
-    
+
     float:left;
     overflow: hidden;
     margin-bottom: 10px;
@@ -728,12 +728,12 @@ ol li {
 .content-wrap .blog ul.blog_post li p {
     margin-top:15px;
 }
-.content-wrap .blog ul li h2 {
+.content-wrap .blog ul li h1 {
     margin:0px;
     padding:0px;
     margin-left:0;
 }
-.content-wrap .blog ul.blog_post li h2 a {
+.content-wrap .blog ul.blog_post li h1 a {
     color: #000;
 }
 .content-wrap .blog ul ul {
@@ -1401,14 +1401,14 @@ a img.aligncenter {
 }
 .it_mobile_menu ul li a{
     margin-left:12px !important; 
-       padding-top: 12px !important;
+    padding-top: 12px !important;
     padding-bottom: 4px !important;
 }
 .it_mobile_menu ul li:last-child a{
     padding-bottom: 10px !important;
 }
 .it_mobile_menu ul a{
- 
+
     border-bottom: none;
 }
 .mobile_nav {

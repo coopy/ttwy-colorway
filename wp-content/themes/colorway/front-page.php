@@ -9,9 +9,6 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Colorway
- * @since Colorway 1.0
  */
 ?>
 <?php get_header(); ?>
@@ -78,9 +75,9 @@
                         <?php } ?>
                     </a>
                     <?php if (inkthemes_get_option('inkthemes_headline1') != '') { ?>
-                        <h3><a href="<?php echo inkthemes_get_option('inkthemes_link1'); ?>"><?php echo inkthemes_get_option('inkthemes_headline1'); ?></a></h3>
+                        <h2><a href="<?php echo inkthemes_get_option('inkthemes_link1'); ?>"><?php echo inkthemes_get_option('inkthemes_headline1'); ?></a></h2>
                     <?php } else { ?>
-                        <h3><a href="#"><?php _e('Power of Easiness','colorway'); ?></a></h3>
+                        <h2><a href="#"><?php _e('Power of Easiness','colorway'); ?></a></h2>
                     <?php } ?>
                     <?php if (inkthemes_get_option('inkthemes_feature1') != '') { ?>
                         <p><?php echo inkthemes_get_option('inkthemes_feature1'); ?></p>
@@ -96,9 +93,9 @@
                         <?php } ?>
                     </a>
                     <?php if (inkthemes_get_option('inkthemes_headline2') != '') { ?>
-                        <h3><a href="<?php echo inkthemes_get_option('inkthemes_link2'); ?>"><?php echo inkthemes_get_option('inkthemes_headline2'); ?></a></h3>
+                        <h2><a href="<?php echo inkthemes_get_option('inkthemes_link2'); ?>"><?php echo inkthemes_get_option('inkthemes_headline2'); ?></a></h2>
                     <?php } else { ?>
-                        <h3><a href="#"><?php _e('Power of Speed','colorway'); ?></a></h3>
+                        <h2><a href="#"><?php _e('Power of Speed','colorway'); ?></a></h2>
                     <?php } ?>
                     <?php if (inkthemes_get_option('inkthemes_feature2') != '') { ?>
                         <p><?php echo inkthemes_get_option('inkthemes_feature2'); ?></p>
@@ -114,9 +111,9 @@
                         <?php } ?>
                     </a>
                     <?php if (inkthemes_get_option('inkthemes_headline3') != '') { ?>
-                        <h3><a href="<?php echo inkthemes_get_option('inkthemes_link3'); ?>"><?php echo inkthemes_get_option('inkthemes_headline3'); ?></a></h3>
+                        <h2><a href="<?php echo inkthemes_get_option('inkthemes_link3'); ?>"><?php echo inkthemes_get_option('inkthemes_headline3'); ?></a></h2>
                     <?php } else { ?>
-                        <h3><a href="#"><?php _e('Power of SEO','colorway'); ?></a></h3>
+                        <h2><a href="#"><?php _e('Power of SEO','colorway'); ?></a></h2>
                     <?php } ?>
                     <?php if (inkthemes_get_option('inkthemes_feature3') != '') { ?>
                         <p><?php echo inkthemes_get_option('inkthemes_feature3'); ?></p>
@@ -132,9 +129,9 @@
                         <?php } ?>
                     </a>
                     <?php if (inkthemes_get_option('inkthemes_headline4') != '') { ?>
-                        <h3><a href="<?php echo inkthemes_get_option('inkthemes_link4'); ?>"><?php echo inkthemes_get_option('inkthemes_headline4'); ?></a></h3>
+                        <h2><a href="<?php echo inkthemes_get_option('inkthemes_link4'); ?>"><?php echo inkthemes_get_option('inkthemes_headline4'); ?></a></h2>
                     <?php } else { ?>
-                        <h3><a href="#"><?php _e('Ready Contact Form','colorway'); ?></a></h3>
+                        <h2><a href="#"><?php _e('Ready Contact Form','colorway'); ?></a></h2>
                     <?php } ?>
                     <?php if (inkthemes_get_option('inkthemes_feature4') != '') { ?>
                         <p><?php echo inkthemes_get_option('inkthemes_feature4'); ?></p>

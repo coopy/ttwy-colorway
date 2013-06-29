@@ -53,7 +53,6 @@ add_action('wp_footer','inkthemes_custom_jquery');
 /**
  * Enqueues the javascript for comment replys 
  * 
- * @since 3.0.0 
  * */
 function inkthemes_enqueue_scripts() {
     if (is_singular() and get_site_option('thread_comments')) {

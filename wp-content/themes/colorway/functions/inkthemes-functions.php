@@ -42,9 +42,9 @@ function inkthemes_nav_fallback() {
     ?>
     <div id="menu">
         <ul class="ddsmoothmenu">
-    <?php
-    wp_list_pages('title_li=&show_home=1&sort_column=menu_order');
-    ?>
+            <?php
+            wp_list_pages('title_li=&show_home=1&sort_column=menu_order');
+            ?>
         </ul>
     </div>
     <?php
@@ -192,37 +192,37 @@ if (!function_exists('inkthemes_comment')) :
                     <div id="comment-<?php comment_ID(); ?>">
                         <div class="comment-author vcard"> <?php echo get_avatar($comment, 40); ?> <?php printf('%s <span class="says">says:</span>' . sprintf('<cite class="fn">%s</cite>', get_comment_author_link())); ?> </div>
                         <!-- .comment-author .vcard -->
-                                <?php if ($comment->comment_approved == '0') : ?>
+                        <?php if ($comment->comment_approved == '0') : ?>
                             <em> <?php echo ('Your comment is awaiting moderation.'); ?> </em> <br />
-                            <?php endif; ?>
+                        <?php endif; ?>
                         <div class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
-                <?php
-                /* translators: 1: date, 2: time */
-                printf('%1$s at %2$s' . get_comment_date(), get_comment_time());
-                ?>
+                                <?php
+                                /* translators: 1: date, 2: time */
+                                printf('%1$s at %2$s' . get_comment_date(), get_comment_time());
+                                ?>
                             </a>
                             <?php edit_comment_link('(Edit)', ' ');
                             ?>
                         </div>
                         <!-- .comment-meta .commentmetadata -->
                         <div class="comment-body">
-                    <?php comment_text(); ?>
+                            <?php comment_text(); ?>
                         </div>
                         <div class="reply">
-                    <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+                            <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
                         </div>
                         <!-- .reply -->
                     </div>
                     <!-- #comment-##  -->
-                        <?php
-                        break;
-                    case 'pingback' :
-                    case 'trackback' :
-                        ?>
+                    <?php
+                    break;
+                case 'pingback' :
+                case 'trackback' :
+                    ?>
                 <li class="post pingback">
                     <p> <?php echo ('Pingback:'); ?>
-                    <?php comment_author_link(); ?>
-                    <?php edit_comment_link('(Edit)', ' '); ?>
+                        <?php comment_author_link(); ?>
+                        <?php edit_comment_link('(Edit)', ' '); ?>
                     </p>
                     <?php
                     break;
@@ -323,14 +323,14 @@ if (!function_exists('inkthemes_comment')) :
             <nav id="<?php echo $nav_id; ?>">
                 <h3 class="assistive-text"><?php echo ( 'Post navigation'); ?></h3>
                 <div class="nav-next">
-            <?php previous_posts_link('Newer posts <span class="meta-nav">&rarr;</span>'); ?>
+                    <?php previous_posts_link('Newer posts <span class="meta-nav">&rarr;</span>'); ?>
                 </div>
                 <div class="nav-previous">
-            <?php next_posts_link('<span class="meta-nav">&larr;</span> Older posts'); ?>
+                    <?php next_posts_link('<span class="meta-nav">&larr;</span> Older posts'); ?>
                 </div>  
             </nav>
             <!-- #nav-above -->
-        <?php
+            <?php
         endif;
     }
 
@@ -379,7 +379,7 @@ if (!function_exists('inkthemes_comment')) :
         } else {
             ?>
             <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
-        <?php
+            <?php
         }
     }
 
@@ -419,8 +419,8 @@ if (!function_exists('inkthemes_comment')) :
     function inkthemes_green_css() {
         ?>
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() . '/css/green.css'; ?>" />
-    <?php
-}
+        <?php
+    }
 
-add_action('wp_head', 'inkthemes_green_css');
-ob_clean();
+    add_action('wp_head', 'inkthemes_green_css');
+    ob_clean();

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Generates the options fields that are used in the form.
  */
@@ -85,7 +86,7 @@ function optionsframework_fields() {
                 foreach ($value['options'] as $key => $option) {
                     $selected = '';
                     if ($val != '') {
-						selected( $options['$key'], $val);
+                        selected($options['$key'], $val);
                     }
                     $output .= '<option' . $selected . ' value="' . esc_attr($key) . '">' . esc_html($option) . '</option>';
                 }
@@ -109,7 +110,7 @@ function optionsframework_fields() {
                         if ($val == $key) {
                             $selected = ' of-radio-img-selected';
                         }
-						checked( $options['$key'],$val);
+                        checked($options['$key'], $val);
                     }
                     $output .= '<input type="radio" id="' . esc_attr($value['id'] . '_' . $key) . '" class="of-radio-img-radio" value="' . esc_attr($key) . '" name="' . esc_attr($name) . '" ' . $checked . ' />';
                     $output .= '<div class="of-radio-img-label">' . esc_html($key) . '</div>';

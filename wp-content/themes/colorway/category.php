@@ -7,40 +7,38 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Colorway
- * @since Colorway 1.0
  */
- ?>
+?>
 <?php get_header(); ?>
 <!--Start Content Grid-->
 <div class="grid_24 content">
-  <div class="grid_16 alpha">
-    <div class="content-wrap">
-      <div class="content-info">
-        <?php if (function_exists('inkthemes_breadcrumbs')) inkthemes_breadcrumbs(); ?>
-      </div>
-      <div class="blog" id="blogmain">
-        <h2>
-          <?php
-			printf('Category Archives: %s','' . single_cat_title( '', false ) . '' );
-		?>
-        </h2>
-        <?php
-			$category_description = category_description();
-			if ( ! empty( $category_description ) )
-				echo '' . $category_description . '';
-		/* Run the loop for the category page to output the posts.
-		 * If you want to overload this in a child theme then include a file
-		 * called loop-category.php and that will be used instead.
-		 */?>
-        <?php get_template_part( 'loop', 'category' );
-		?>
-      </div>
-      <?php inkthemes_content_nav( 'nav-below' ); ?>
+    <div class="grid_16 alpha">
+        <div class="content-wrap">
+            <div class="content-info">
+                <?php if (function_exists('inkthemes_breadcrumbs')) inkthemes_breadcrumbs(); ?>
+            </div>
+            <div class="blog" id="blogmain">
+                <h2>
+                    <?php
+                    printf('Category Archives: %s', '' . single_cat_title('', false) . '');
+                    ?>
+                </h2>
+                <?php
+                $category_description = category_description();
+                if (!empty($category_description))
+                    echo '' . $category_description . '';
+                /* Run the loop for the category page to output the posts.
+                 * If you want to overload this in a child theme then include a file
+                 * called loop-category.php and that will be used instead.
+                 */
+                ?>
+                <?php get_template_part('loop', 'category');
+                ?>
+            </div>
+            <?php inkthemes_content_nav('nav-below'); ?>
+        </div>
     </div>
-  </div>
-  <?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 </div>
 <div class="clear"></div>
 <!--End Content Grid-->

@@ -1,6 +1,29 @@
 
 Theme Name: ColorWay
 ========================
+* Version 2.5.2
+***************************************
+1. Remove @package wordpress from all files.
+2. Theme name issue fixed.
+3. Upload button style issue in theme option fixed.
+
+* Version 2.5.1
+***************************************
+1. An undefined function was calling in attachment.php is now fixed.
+
+* Version 2.5
+***************************************
+1. Theme name bug fixed. 
+
+* Version 2.4
+***************************************
+1. All headings SEO friendly.
+
+* Version 2.3
+***************************************
+1. Code optimized.
+2. Image fade effect added
+
 * Version 2.2
 ***************************************
 1. Debug issues fixed.
@@ -58,7 +81,7 @@ Theme Name: ColorWay
 6. Long strings in menu drop down. e.g(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) issue fixed.
 
 
-7.	Long menu overlaps the designated space in the theme issue fixed.
+7. Long menu overlaps the designated space in the theme issue fixed.
 
 
 7. Long site title / descriiption overflows in the footer issue fixed.

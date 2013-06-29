@@ -4,9 +4,6 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package WordPress
- * @subpackage Colorway
- * @since Colorway 1.0
  */
 ?>
 <!DOCTYPE html>
@@ -32,7 +29,7 @@
             ?>
         </title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
         <?php
@@ -52,8 +49,8 @@
             echo inkthemes_get_option('inkthemes_bodybg');
         } else {
             ?>
-              <?php echo get_template_directory_uri(); ?>/images/body-bg.png
-            <?php } ?>">
+                                     <?php echo get_template_directory_uri(); ?>/images/body-bg.png
+                                 <?php } ?>">
         <!--Start Container Div-->
         <div class="container_24 container">
             <!--Start Header Grid-->
@@ -62,7 +59,7 @@
                 <!--Start MenuBar-->
                 <div class="menu-bar">
                     <div id="MainNav">
-                        <a href="#" class="mobile_nav closed"><?php _e('Pages Navigation Menu','colorway'); ?><span></span></a>                      
+                        <a href="#" class="mobile_nav closed"><?php _e('Pages Navigation Menu', 'colorway'); ?><span></span></a>                      
                         <?php inkthemes_nav(); ?>                       
                     </div>
                     <div class="clearfix"></div>

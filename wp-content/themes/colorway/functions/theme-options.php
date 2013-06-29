@@ -8,7 +8,7 @@
  */
 function optionsframework_option_name() {
     // This gets the theme name from the stylesheet (lowercase and without spaces)
-    $themename = wp_get_theme();
+    $themename = function_exists( 'wp_get_theme' ) ? wp_get_theme() : get_current_theme();
     $themename = $themename['Name'];
     $themename = preg_replace("/\W/", "", strtolower($themename));
     $optionsframework_settings = get_option('optionsframework');
@@ -23,8 +23,8 @@ function optionsframework_option_name() {
  *  
  */
 function optionsframework_options() {
-    $themename = wp_get_theme();
-    $themename = 'Colorway Lite Theme';
+    $themename = function_exists( 'wp_get_theme' ) ? wp_get_theme() : get_current_theme();
+    $themename = $themename['Name'];
     $shortname = "of";
     //Stylesheet Reader
     $alt_stylesheets = array("black" =>

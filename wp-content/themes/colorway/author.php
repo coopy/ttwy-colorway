@@ -7,9 +7,6 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Colorway
- * @since Colorway 1.0
  */
 ?>
 <?php get_header(); ?>
@@ -19,7 +16,8 @@
         <div class="content-wrap">
             <div class="content-info">
                 <?php if (function_exists('inkthemes_breadcrumbs'))
-                    inkthemes_breadcrumbs(); ?>
+                    inkthemes_breadcrumbs();
+                ?>
             </div>
             <div class="blog" id="blogmain">
                 <?php
@@ -55,7 +53,7 @@
                 get_template_part('loop', 'author');
                 ?>
             </div>
-    <?php inkthemes_content_nav('nav-below'); ?>
+<?php inkthemes_content_nav('nav-below'); ?>
         </div>
     </div>
 <?php get_sidebar(); ?>

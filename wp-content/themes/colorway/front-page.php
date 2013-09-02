@@ -84,6 +84,12 @@
                     <?php } else { ?>
                         <p><?php _e('This Colorway Wordpress Theme gives you the easiness of building your site without any coding skills required.','colorway'); ?></p>
                     <?php } ?>
+                    <?php
+                    // Add a "Read More" link. -pnilsson 09/02/13
+                    if (inkthemes_get_option('inkthemes_link1')) { ?>
+                        <a href="<?php echo inkthemes_get_option('inkthemes_link1'); ?>">Read more...</a>
+                    <?php } ?>
+
                 </div>
                 <div class="one_fourth middle"> <a href="<?php echo inkthemes_get_option('inkthemes_link2'); ?>" class="bigthumbs">
                         <?php if (inkthemes_get_option('inkthemes_fimg2') != '') { ?>
@@ -101,6 +107,11 @@
                         <p><?php echo inkthemes_get_option('inkthemes_feature2'); ?></p>
                     <?php } else { ?>
                         <p><?php _e('The Colorway Wordpress Theme is highly optimized for Speed. So that your website opens faster than any similar themes.','colorway'); ?></p>
+                    <?php } ?>
+                    <?php
+                    // Add a "Read More" link. -pnilsson 09/02/13
+                    if (inkthemes_get_option('inkthemes_link2')) { ?>
+                        <a href="<?php echo inkthemes_get_option('inkthemes_link2'); ?>">Read more...</a>
                     <?php } ?>
                 </div>
                 <div class="one_fourth"> <a href="<?php echo inkthemes_get_option('inkthemes_link3'); ?>" class="bigthumbs">
@@ -120,6 +131,11 @@
                     <?php } else { ?>
                         <p><?php _e('Visitors to the Website are very highly desirable. With the SEO Optimized Themes, You get more traffic from Google.','colorway'); ?></p>
                     <?php } ?>
+                    <?php
+                    // Add a "Read More" link. -pnilsson 09/02/13
+                    if (inkthemes_get_option('inkthemes_link3')) { ?>
+                        <a href="<?php echo inkthemes_get_option('inkthemes_link3'); ?>">Read more...</a>
+                    <?php } ?>
                 </div>
                 <div class="one_fourth last"> <a href="<?php echo inkthemes_get_option('inkthemes_link4'); ?>" class="bigthumbs">
                         <?php if (inkthemes_get_option('inkthemes_fimg4') != '') { ?>
@@ -137,6 +153,11 @@
                         <p><?php echo inkthemes_get_option('inkthemes_feature4'); ?></p>
                     <?php } else { ?>
                         <p><?php _e('Let your visitors easily contact you. The builtin readymade contact form makes it easier for clients to contact.','colorway'); ?></p>
+                    <?php } ?>
+                    <?php
+                    // Add a "Read More" link. -pnilsson 09/02/13
+                    if (inkthemes_get_option('inkthemes_link4')) { ?>
+                        <a href="<?php echo inkthemes_get_option('inkthemes_link4'); ?>">Read more...</a>
                     <?php } ?>
                 </div>
             </div>

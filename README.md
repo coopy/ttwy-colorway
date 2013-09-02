@@ -11,7 +11,7 @@ Modifications
 
 ### Front page
 
-- Bottom columns are completely wrapped in `<a/>`, not just the image.
+- Added "Read more..." links below each feature column.
 
 ### Other
 

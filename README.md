@@ -1,10 +1,10 @@
-treetrunkwiseyoga.com
-=====================
+WP Colorway theme for treetrunkwiseyoga.com
+===========================================
 
 Summary
 -------
 
-Modified Colorlabs theme for treetrunkwiseyoga.com
+Modified Colorway theme for treetrunkwiseyoga.com
 
 Modifications
 -------------
